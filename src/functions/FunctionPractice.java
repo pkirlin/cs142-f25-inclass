@@ -12,5 +12,8 @@ public class FunctionPractice {
         System.out.println("Testing distance:");
         System.out.println(distance(1, 2, 3, 4)); // should be about 2.828
         System.out.println(distance(3, 7, -5, 1));  // should be 10.0
+
+        // Here is an array you can use for the totalDistance() function:
+        int[] array = new int[] { 1, 2, 3, -4, -3, 0 };
     }
 }
