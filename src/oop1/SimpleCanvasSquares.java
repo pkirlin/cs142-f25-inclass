@@ -9,5 +9,11 @@ public class SimpleCanvasSquares {
         // a concentric square design similar to this:
         // https://www.artsy.net/artwork/frank-stella-gran-cairo-4
 
+        SimpleCanvas canvas = new SimpleCanvas(500, 500);
+
+        canvas.drawFilledRectangle(100, 100, 300, 300);
+        canvas.setPenColor(Color.PINK);
+        canvas.show();
+
     }
 }
