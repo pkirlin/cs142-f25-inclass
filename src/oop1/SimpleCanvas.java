@@ -547,9 +547,9 @@ public class SimpleCanvas {
             @Override
             public void run() {
                 offscreenImage.setRGB(2 * x, 2 * y, c.getRGB());
-                offscreenImage.setRGB(2 * x + 1, 2 * y, c.getRGB());
-                offscreenImage.setRGB(2 * x + 1, 2 * y + 1, c.getRGB());
-                offscreenImage.setRGB(2 * x, 2 * y + 1, c.getRGB());
+                //offscreenImage.setRGB(2 * x + 1, 2 * y, c.getRGB());
+                //offscreenImage.setRGB(2 * x + 1, 2 * y + 1, c.getRGB());
+                //offscreenImage.setRGB(2 * x, 2 * y + 1, c.getRGB());
                 //frame.repaint();
             }
         });
