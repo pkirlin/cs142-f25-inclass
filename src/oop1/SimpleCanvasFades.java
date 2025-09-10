@@ -11,6 +11,10 @@ public class SimpleCanvasFades {
         // for each line, starting at (0, 0, 0) and ending at (0, 0, 255).
         // See "blue-fade.png" in this folder for what it should look like.
 
+        SimpleCanvas canv = new SimpleCanvas(256, 256);
+        canv.show();
+
+
         // How would this work for a canvas twice as big? (512 x 512)
 
         // Change your program to let the user enter an RGB triple (3 ints) for the color

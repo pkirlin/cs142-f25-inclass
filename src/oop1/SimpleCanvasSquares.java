@@ -11,8 +11,16 @@ public class SimpleCanvasSquares {
 
         SimpleCanvas canvas = new SimpleCanvas(500, 500);
 
+        Color mycolor2 = new Color(0, 100, 255);
+
+        canvas.setPenColor(mycolor2);
         canvas.drawFilledRectangle(100, 100, 300, 300);
-        canvas.setPenColor(Color.PINK);
+
+        Color mycolor = new Color(255, 100, 255);
+
+        canvas.setPenColor(mycolor);
+        canvas.drawFilledRectangle(200, 200, 100, 100);
+
         canvas.show();
 
     }
