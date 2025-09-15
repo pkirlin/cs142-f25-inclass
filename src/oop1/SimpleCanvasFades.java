@@ -12,6 +12,14 @@ public class SimpleCanvasFades {
         // See "blue-fade.png" in this folder for what it should look like.
 
         SimpleCanvas canv = new SimpleCanvas(256, 256);
+        int x = 0;
+        Color color = new Color(0, 0, x);
+        for ( x = 0; x < 256; x++) {
+
+            canv.setPenColor(color);
+            canv.drawLine(0, x, 256, x);
+        }
+
         canv.show();
 
 
