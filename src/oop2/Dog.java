@@ -1,10 +1,15 @@
 package oop2;
 
 public class Dog {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
-    void speak() {
+    public Dog(String newName, int newAge) {
+        name = newName;
+        age = newAge;
+    }
+
+    public void speak() {
         System.out.println(name + " says woof woof");
     }
 }
