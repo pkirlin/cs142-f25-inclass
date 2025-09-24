@@ -4,6 +4,13 @@ public class Dog {
     private String name;
     private int age;
     private int energy;
+    private static String barkType = "woof woof";
+
+    public Dog() {
+        name = "Default";
+        age = 4;
+        energy = 5;
+    }
 
     public Dog(String newName, int newAge) {
         name = newName;
@@ -15,9 +22,9 @@ public class Dog {
         return energy;
     }
 
-    public void setEnergy(int energy) {
-        if (energy > 0) {
-            this.energy = energy;
+    public void setEnergy(int newEnergy) {
+        if (energy >= 0) {
+            energy = newEnergy;
         }
     }
 
@@ -44,13 +51,25 @@ public class Dog {
         this.name = name;
     }
 
+    public void speak(String barkString) {
+        System.out.println(name + " says " + barkString);
+    }
+
     public void speak() {
-        System.out.println(name + " says woof woof");
+        System.out.println(name + " says " + barkType);
+    }
+
+    public static void changeBark(String newBark) {
+        barkType = newBark;
     }
 
     public void playFetch() {
-        System.out.println(name + " is playing fetch.");
-        energy--;
+        if (energy > 0) {
+            System.out.println(name + " is playing fetch.");
+            energy--;
+        } else {
+            System.out.println("Your dog needs more energy!");
+        }
     }
 
     public String toString() {
