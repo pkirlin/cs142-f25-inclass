@@ -33,4 +33,11 @@ public class Fraction {
         Fraction answer = new Fraction(newNumer, newDenom);
         return answer;
     }
+
+    public Fraction multiply(Fraction otherFraction) {
+        int newNumer = numer * otherFraction.numer;
+        int newDenom = denom * otherFraction.denom;
+        Fraction answer = new Fraction(newNumer, newDenom);
+        return answer;
+    }
 }

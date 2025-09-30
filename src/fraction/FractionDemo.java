@@ -9,6 +9,7 @@ public class FractionDemo {
         System.out.println(f1);
         System.out.println(f2);
         System.out.println(f1.add(f2));
+        System.out.println(f1.multiply(f2));
         //f2.reduce();
         //System.out.println(f2);
     }
