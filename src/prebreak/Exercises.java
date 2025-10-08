@@ -26,10 +26,17 @@ public class Exercises {
         String reversed = reverseString(s);
         System.out.println("reversed string is " + reversed);
 
+        readWords();
     }
 
     public static ArrayList<Integer> noDuplicates(ArrayList<Integer> list) {
-        return null;
+        ArrayList<Integer> answer = new ArrayList<Integer>();
+        for (int i = 0; i < list.size(); i++) {
+            if (!answer.contains(list.get(i))) {
+                answer.add(list.get(i));
+            }
+        }
+        return answer;
     }
 
     public static void noDuplicatesChallenge(ArrayList<Integer> list) {
@@ -37,7 +44,11 @@ public class Exercises {
     }
 
     public static String reverseString(String str) {
-        return "";
+        String answer = "";
+        for (int i = str.length()-1; i >= 0; i--) {
+            answer += str.charAt(i);
+        }
+        return answer;
     }
 
     public static ArrayList<String> readWords() {
@@ -48,7 +59,12 @@ public class Exercises {
         }
         Scanner scan = new Scanner(is);
 
-        return null;
+        ArrayList<String> answer = new ArrayList<>();
+        while (scan.hasNextLine()) {
+            String line = scan.nextLine();
+            answer.add(line);
+        }
+        return answer;
     }
 
     public static int linearSearch(ArrayList<String> list, String lookingFor) {
