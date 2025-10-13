@@ -45,7 +45,7 @@ public class Exercises2 {
     }
 
     public static ArrayList<String> readWords() {
-        InputStream is = Exercises.class.getResourceAsStream("words.txt");
+        InputStream is = Exercises2.class.getResourceAsStream("words.txt");
         if (is == null) {
             System.err.println("Could not open file: words.txt");
             System.exit(1);
