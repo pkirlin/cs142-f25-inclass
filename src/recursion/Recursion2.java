@@ -64,7 +64,15 @@ public class Recursion2 {
      * RECURSIVE CASE:
      */
     public static String reverseRec(String str) {
-        return ""; // remove this when you start coding
+        if (str.length() == 1) { //base case
+            return str;
+        }
+        else { // recursive case
+            char lastCharacter = str.charAt(str.length()-1);
+            String firstCharacters = str.substring(0, str.length()-1);
+            return lastCharacter + reverseRec(firstCharacters);
+        }
+
     }
 
     /**
@@ -74,8 +82,8 @@ public class Recursion2 {
         if (n == 0) {
             return;
         } else {
-            System.out.println(n);
             weird(n - 1);
+            System.out.println(n);
         }
     }
 
