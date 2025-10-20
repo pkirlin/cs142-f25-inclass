@@ -16,7 +16,7 @@ public class RecursiveGraphics {
     }
 
     public static void drawSquare(SimpleCanvas canvas, int centerX, int centerY, int size) {
-        if (size >= 100) {
+        if (size >= 2) {
             canvas.drawRectangle(centerX - size/2, centerY - size/2, size, size);
             drawSquare(canvas, centerX - size/2, centerY - size/2, size/2);
             drawSquare(canvas, centerX + size/2, centerY - size/2, size/2);

@@ -24,11 +24,20 @@ public class Recursion1 {
     }
 
     public static long fact(int num) {
-        return 0; // remove this when you start coding
+        long answer = 1;
+        for (int i = num; i > 1; i--) {
+            answer = answer * i;
+        }
+        return answer;
     }
 
     public static long factRec(int num) {
-        return 0; // remove this when you start coding
+        if (num == 1) { // base case
+            return 1;
+        } else { // recursive case
+            long value = factRec(num - 1);
+            return value * num;
+        }
     }
 
     public static String reverse(String str) {
