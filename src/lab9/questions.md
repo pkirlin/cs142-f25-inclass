@@ -36,7 +36,7 @@ they would like to be placed in, but each hospital only has a certain
 number of students they can take, so each student cannot often be placed
 in their first-choice hospital.
 
-In this lab, we will explore three general-purpose matching algorithms
+In this lab, we will explore two general-purpose matching algorithms
 that can be used in multiple situations.  Each one is written recursively
 with backtracking.  The algorithms are:
 
