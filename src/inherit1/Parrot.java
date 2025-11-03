@@ -6,6 +6,10 @@ public class Parrot {
     private int energy;
     private Color color;
 
+    public void sleep() {
+        energy += 5;
+    }
+
     public int getEnergy() {
         return energy;
     }

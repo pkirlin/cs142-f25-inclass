@@ -7,7 +7,15 @@ public class ParrotDemo {
         Parrot polly = new Parrot();
         polly.setColor(Color.BLUE);
         polly.setEnergy(3);
+        //polly.setName("Polly");
         polly.fly();
         polly.fly();
+
+        PetParrot tweety = new PetParrot();
+        tweety.setName("Tweety");
+        tweety.setColor(Color.YELLOW);
+        tweety.setEnergy(7);
+        tweety.fly();
+        tweety.fly();
     }
 }
