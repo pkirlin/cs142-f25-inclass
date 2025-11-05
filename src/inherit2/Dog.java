@@ -5,6 +5,12 @@ public class Dog
     protected String name;
     private int age;
 
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("Constructing a dog.");
+    }
+
     public void speak() {
         System.out.println(name + " says woof woof!");
     }
