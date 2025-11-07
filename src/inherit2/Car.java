@@ -11,7 +11,7 @@ public class Car {
         totalDistanceTraveled = 0;
     };
 
-    public double getDistance() {
+    public double getDistance()  {
         return totalDistanceTraveled;
     }
 
