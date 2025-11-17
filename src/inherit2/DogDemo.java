@@ -6,7 +6,7 @@ public class DogDemo {
         //fido.setName("Fido");
         //fido.setAge(2);
 
-        Dog toto = new Dog();//"Toto", 3);
+        Dog toto = new Dog("Toto", 3);
         //toto.setName("Toto");
         //toto.setAge(3);
 

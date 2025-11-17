@@ -92,7 +92,9 @@ public class PolymorphismDemo {
         ShowDog stuckUpDog = new ShowDog("Fluffy", 3);
 
         for (Dog d : listOfDogs) {
-            stuckUpDog.chase(d);
+            if (d instanceof ShowDog) {
+                stuckUpDog.chase(d);
+            }
         }
     }
 }

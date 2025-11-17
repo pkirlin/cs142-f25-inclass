@@ -13,7 +13,10 @@ public class MyPets {
         for (Pet p : mypets) {
             System.out.println(p);
             // I want p to speak!
-
+            p.speak();
         }
+
+        //Pet p = new Pet("oscar", 5);
+        //p.speak();
     }
 }
