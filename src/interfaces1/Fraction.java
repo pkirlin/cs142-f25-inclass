@@ -1,6 +1,6 @@
 package interfaces1;
 
-public class Fraction {
+public class Fraction implements Comparable<Fraction> {
     private int numer;
     private int denom;
 
@@ -49,4 +49,16 @@ public class Fraction {
         else return gcd(b, a % b);
     }
 
+    @Override
+    public int compareTo(Fraction other) {
+        double frac1 = (double)numer/denom;
+        double frac2 = (double)other.numer/other.denom;
+        if (frac1 < frac2)  {
+            return -1;
+        } else if (frac1 > frac2) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
 }
